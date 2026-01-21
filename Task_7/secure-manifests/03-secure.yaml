@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: root-user-pod
+spec:
+  containers:
+  - name: root-user-container
+    image: nginx

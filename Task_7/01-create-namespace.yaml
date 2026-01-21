@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: audit-zone
+  annotations:
+    "kubectl.kubernetes.io/default-limit-cpu": "200m"
+    "kubectl.kubernetes.io/default-limit-memory": "200Mi"
+    "openshift.io/sa.scc.supplemental-groups": "10000/10000"
+    "openshift.io/sa.scc.uid-range": "10000/10000"
+    "openshift.io/scc": "restricted"
